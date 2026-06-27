@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Restaurante de mariscos frescos con menú digital y pedidos por WhatsApp." />
+  <title>Madissquería | Mariscos frescos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#inicio" class="nav-logo">
+        <span class="logo-icon">🦞</span>
+        <span class="logo-text">Madissquería</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#inicio" class="nav-link">Inicio</a>
+        <a href="#menu" class="nav-link">Menú</a>
+        <a href="#nosotros" class="nav-link">Nosotros</a>
+        <a href="#galeria" class="nav-link">Galería</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg">
+      <div class="hero-overlay"></div>
+      <div class="hero-bubbles">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+      </div>
+    </div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow">Bienvenido a</p>
+      <h1 class="hero-title">Madissquería</h1>
+      <p class="hero-subtitle">El sabor del mar directo a tu mesa</p>
+      <p class="hero-desc">Mariscos frescos preparados al momento con ingredientes de calidad y auténtico sabor.</p>
+      <div class="hero-cta">
+        <a href="#menu" class="btn btn-primary">Ver menú</a>
+        <a href="https://wa.me/521234567890?text=Hola%2C%20quiero%20hacer%20un%20pedido%20en%20Madissquer%C3%ADa" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Pedir por WhatsApp
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-image-wrapper">
+      <div class="hero-image-card">
+        <div class="hero-food-emoji">🦐</div>
+        <div class="hero-food-label">Fresco hoy</div>
+      </div>
+    </div>
+
+    <div class="wave-divider">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,40 C240,80 480,0 720,40 C960,80 1200,0 1440,40 L1440,80 L0,80 Z" fill="#ffffff"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ===================== MENÚ ===================== -->
+  <section class="section" id="menu">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Lo que tenemos</p>
+        <h2 class="section-title">Nuestro Menú</h2>
+        <p class="section-desc">Mariscos del día, listos para deleitar tu paladar con sabores auténticos del mar.</p>
+      </div>
+
+      <!-- Tabs de categorías -->
+      <div class="menu-tabs">
+        <button class="tab-btn active" data-tab="entradas">Entradas</button>
+        <button class="tab-btn" data-tab="especialidades">Especialidades</button>
+        <button class="tab-btn" data-tab="bebidas">Bebidas</button>
+      </div>
+
+      <!-- ENTRADAS -->
+      <div class="menu-grid active" id="tab-entradas">
+        <div class="menu-card">
+          <div class="menu-card-img" style="background: linear-gradient(135deg, #00A6A6 0%, #003B5C 100%);">
+            <span class="menu-emoji">🍋</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3 class="menu-card-name">Ceviche Clásico</h3>
+              <span class="menu-badge">Popular</span>
+            </div>
+            <p class="menu-card-desc">Mariscos frescos preparados con limón, vegetales y nuestra receta especial.</p>
+            <div class="menu-card-footer">
+              <span class="menu-price">$120</span>
+              <a href="https://wa.me/521234567890?text=Hola%2C%20quiero%20pedir%20un%20Ceviche%20Cl%C3%A1sico" class="btn-order" target="_blank" rel="noopener noreferrer">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <div class="menu-card-img" style="background: linear-gradient(135deg, #FF6B4A 0%, #003B5C 100%);">
+            <span class="menu-emoji">🦪</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3 class="menu-card-name">Ostiones Naturales</h3>
+              <span class="menu-badge">Fresco</span>
+            </div>
+            <p class="menu-card-desc">Ostiones del día servidos con salsa valentina, limón y chamoy. Media docena.</p>
+            <div class="menu-card-footer">
+              <span class="menu-price">$130</span>
+              <a href="https://wa.me/521234567890?text=Hola%2C%20quiero%20pedir%20Ostiones%20Naturales" class="btn-order" target="_blank" rel="noopener noreferrer">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <div class="menu-card-img" style="background: linear-gradient(135deg, #00A6A6 0%, #FF6B4A 100%);">
+            <span class="menu-emoji">🦑</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3 class="menu-card-name">Tostadas de Marlín</h3>
+            </div>
+            <p class="menu-card-desc">Marlín ahumado sobre tostada crujiente con aguacate y pico de gallo. 3 piezas.</p>
+            <div class="menu-card-footer">
+              <span class="menu-price">$110</span>
+              <a href="https://wa.me/521234567890?text=Hola%2C%20quiero%20pedir%20Tostadas%20de%20Marl%C3%ADn" class="btn-order" target="_blank" rel="noopener noreferrer">Pedir</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ESPECIALIDADES -->
+      <div class="menu-grid" id="tab-especialidades">
+        <div class="menu-card">
+          <div class="menu-card-img" style="background: linear-gradient(135deg, #FF6B4A 0%, #003B5C 100%);">
+            <span class="menu-emoji">🍤</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3 class="menu-card-name">Camarones al Ajillo</h3>
+              <span class="menu-badge">Chef</span>
+            </div>
+            <p class="menu-card-desc">Camarones salteados en mantequilla con ajo, limón y hierbas finas. Servidos con arroz.</p>
+            <div class="menu-card-footer">
+              <span class="menu-price">$220</span>
+              <a href="https://wa.me/521234567890?text=Hola%2C%20quiero%20pedir%20Camarones%20al%20Ajillo" class="btn-order" target="_blank" rel="noopener noreferrer">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <div class="menu-card-img" style="background: linear-gradient(135deg, #003B5C 0%, #00A6A6 100%);">
+            <span class="menu-emoji">🌊</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3 class="menu-card-name">Torre de Mariscos</h3>
+              <span class="menu-badge">Especial</span>
+            </div>
+            <p class="menu-card-desc">Pulpo, camarón, calamar y jaiba en salsa de la casa. Nuestra estrella del menú.</p>
+            <div class="menu-card-footer">
+              <span class="menu-price">$280</span>
+              <a href="https://wa.me/521234567890?text=Hola%2C%20quiero%20pedir%20Torre%20de%20Mariscos" class="btn-order" target="_blank" rel="noopener noreferrer">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <div class="menu-card-img" style="background: linear-gradient(135deg, #00A6A6 0%, #003B5C 100%);">
+            <span class="menu-emoji">🐟</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3 class="menu-card-name">Filete Empanizado</h3>
+            </div>
+            <p class="menu-card-desc">Filete de pescado blanco con costra dorada, papas y ensalada fresca. Crujiente y delicioso.</p>
+            <div class="menu-card-footer">
+              <span class="menu-price">$180</span>
+              <a href="https://wa.me/521234567890?text=Hola%2C%20quiero%20pedir%20Filete%20Empanizado" class="btn-order" target="_blank" rel="noopener noreferrer">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <div class="menu-card-img" style="background: linear-gradient(135deg, #FF6B4A 0%, #00A6A6 100%);">
+            <span class="menu-emoji">🦀</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3 class="menu-card-name">Jaiba Gratinada</h3>
+              <span class="menu-badge">Nuevo</span>
+            </div>
+            <p class="menu-card-desc">Jaiba rellena de mariscos mixtos, gratinada con queso manchego y chipotle. Imperdible.</p>
+            <div class="menu-card-footer">
+              <span class="menu-price">$240</span>
+              <a href="https://wa.me/521234567890?text=Hola%2C%20quiero%20pedir%20Jaiba%20Gratinada" class="btn-order" target="_blank" rel="noopener noreferrer">Pedir</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BEBIDAS -->
+      <div class="menu-grid" id="tab-bebidas">
+        <div class="menu-card menu-card--small">
+          <div class="menu-card-img" style="background: linear-gradient(135deg, #00A6A6 0%, #003B5C 100%);">
+            <span class="menu-emoji">🫙</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3 class="menu-card-name">Agua Fresca</h3>
+            </div>
+            <p class="menu-card-desc">Jamaica, horchata o limón. Preparadas diariamente en casa.</p>
+            <div class="menu-card-footer">
+              <span class="menu-price">$40</span>
+              <a href="https://wa.me/521234567890?text=Hola%2C%20quiero%20pedir%20un%20Agua%20Fresca" class="btn-order" target="_blank" rel="noopener noreferrer">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card menu-card--small">
+          <div class="menu-card-img" style="background: linear-gradient(135deg, #003B5C 0%, #FF6B4A 100%);">
+            <span class="menu-emoji">🥤</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3 class="menu-card-name">Refrescos</h3>
+            </div>
+            <p class="menu-card-desc">Coca-Cola, Sprite, Manzanita, Sangría. Lata fría.</p>
+            <div class="menu-card-footer">
+              <span class="menu-price">$35</span>
+              <a href="https://wa.me/521234567890?text=Hola%2C%20quiero%20pedir%20un%20Refresco" class="btn-order" target="_blank" rel="noopener noreferrer">Pedir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card menu-card--small">
+          <div class="menu-card-img" style="background: linear-gradient(135deg, #FF6B4A 0%, #003B5C 100%);">
+            <span class="menu-emoji">🍹</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3 class="menu-card-name">Michelada</h3>
+              <span class="menu-badge">Popular</span>
+            </div>
+            <p class="menu-card-desc">Michelada clásica con chamoy, clamato y chamoy. Fresquísima.</p>
+            <div class="menu-card-footer">
+              <span class="menu-price">$80</span>
+              <a href="https://wa.me/521234567890?text=Hola%2C%20quiero%20pedir%20una%20Michelada" class="btn-order" target="_blank" rel="noopener noreferrer">Pedir</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== NOSOTROS ===================== -->
+  <section class="section section--ocean" id="nosotros">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="about-image-frame">
+            <div class="about-image-inner">
+              <span class="about-big-emoji">🦞</span>
+            </div>
+            <div class="about-badge-floating">
+              <span class="about-badge-num">+5</span>
+              <span class="about-badge-text">años de sabor</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-text">
+          <p class="section-eyebrow">Quiénes somos</p>
+          <h2 class="section-title section-title--light">Tradición y frescura en cada platillo</h2>
+          <p class="about-desc">En Madissquería ofrecemos mariscos frescos preparados con pasión, combinando tradición y calidad para crear una experiencia única. Cada platillo es una historia de mar que llega directamente a tu mesa.</p>
+
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">30+</span>
+              <span class="stat-label">Platillos</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">100%</span>
+              <span class="stat-label">Frescos</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">★4.9</span>
+              <span class="stat-label">Calificación</span>
+            </div>
+          </div>
+
+          <a href="https://wa.me/521234567890?text=Hola%2C%20quiero%20hacer%20una%20reservaci%C3%B3n" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Hacer reservación</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== GALERÍA ===================== -->
+  <section class="section" id="galeria">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">En imágenes</p>
+        <h2 class="section-title">Galería</h2>
+        <p class="section-desc">Una mirada a nuestros platillos, nuestro espacio y la experiencia que te espera.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item gallery-item--tall">
+          <div class="gallery-inner" style="background: linear-gradient(135deg, #003B5C, #00A6A6);">
+            <span class="gallery-emoji">🦐</span>
+            <div class="gallery-overlay">
+              <p>Camarones frescos del día</p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-inner" style="background: linear-gradient(135deg, #FF6B4A, #003B5C);">
+            <span class="gallery-emoji">🍋</span>
+            <div class="gallery-overlay">
+              <p>Ceviche preparado al momento</p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-inner" style="background: linear-gradient(135deg, #00A6A6, #FF6B4A);">
+            <span class="gallery-emoji">🦀</span>
+            <div class="gallery-overlay">
+              <p>Mariscos seleccionados</p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item gallery-item--wide">
+          <div class="gallery-inner" style="background: linear-gradient(135deg, #003B5C, #FF6B4A);">
+            <span class="gallery-emoji">🌊</span>
+            <div class="gallery-overlay">
+              <p>Ambiente familiar y acogedor</p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-inner" style="background: linear-gradient(135deg, #FF6B4A, #00A6A6);">
+            <span class="gallery-emoji">🐟</span>
+            <div class="gallery-overlay">
+              <p>Pescado fresco diariamente</p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-inner" style="background: linear-gradient(135deg, #00A6A6, #003B5C);">
+            <span class="gallery-emoji">🦪</span>
+            <div class="gallery-overlay">
+              <p>Ostiones del Pacífico</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== OPINIONES ===================== -->
+  <section class="section section--light" id="opiniones">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Lo que dicen</p>
+        <h2 class="section-title">Opiniones de clientes</h2>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Excelente sabor, los camarones están increíbles. La atención fue muy amable y el lugar se ve limpio y bonito."</p>
+          <div class="review-author">
+            <div class="review-avatar">C</div>
+            <div>
+              <span class="review-name">Carlos M.</span>
+              <span class="review-date">Hace 2 semanas</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card review-card--featured">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Un lugar con comida fresca y muy buena atención. El ceviche es lo mejor que he probado. Ya regresaré con mi familia."</p>
+          <div class="review-author">
+            <div class="review-avatar" style="background: var(--coral);">A</div>
+            <div>
+              <span class="review-name">Ana G.</span>
+              <span class="review-date">Hace 1 mes</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"La torre de mariscos es una obra de arte. Porciones generosas, precio justo. 100% recomendado."</p>
+          <div class="review-author">
+            <div class="review-avatar" style="background: var(--turquoise);">R</div>
+            <div>
+              <span class="review-name">Roberto L.</span>
+              <span class="review-date">Hace 3 semanas</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== UBICACIÓN ===================== -->
+  <section class="section" id="ubicacion">
+    <div class="container">
+      <div class="location-grid">
+        <div class="location-info">
+          <p class="section-eyebrow">Encuéntranos</p>
+          <h2 class="section-title">Nuestra ubicación</h2>
+
+          <div class="location-details">
+            <div class="location-item">
+              <span class="location-icon">📍</span>
+              <div>
+                <strong>Dirección</strong>
+                <p>Av. Principal 123, Col. Centro</p>
+              </div>
+            </div>
+            <div class="location-item">
+              <span class="location-icon">🕐</span>
+              <div>
+                <strong>Horario</strong>
+                <p>Lunes – Domingo<br/>12:00 PM – 10:00 PM</p>
+              </div>
+            </div>
+            <div class="location-item">
+              <span class="location-icon">📞</span>
+              <div>
+                <strong>Teléfono</strong>
+                <p>+52 123 456 7890</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="https://wa.me/521234567890?text=Hola%2C%20quiero%20hacer%20un%20pedido%20en%20Madissquer%C3%ADa" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+            Pedir ahora por WhatsApp
+          </a>
+        </div>
+
+        <div class="location-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.3!2d-99.13!3d19.42!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDI1JzEyLjAiTiA5OcKwMDcnNDguMCJX!5e0!3m2!1ses!2smx!4v1234567890"
+            width="100%"
+            height="350"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Ubicación de Madissquería">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACTO ===================== -->
+  <section class="section section--ocean" id="contacto">
+    <div class="container">
+      <div class="contact-wrapper">
+        <div class="section-header">
+          <p class="section-eyebrow">Escríbenos</p>
+          <h2 class="section-title section-title--light">Contáctanos</h2>
+          <p class="section-desc section-desc--light">¿Tienes alguna pregunta o quieres hacer un pedido especial? Estamos aquí para ayudarte.</p>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required />
+          </div>
+          <div class="form-group">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="+52 000 000 0000" />
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="¿En qué podemos ayudarte?" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Enviar mensaje</button>
+          <p class="form-note" id="formNote" style="display:none;"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#inicio" class="nav-logo">
+            <span class="logo-icon">🦞</span>
+            <span class="logo-text">Madissquería</span>
+          </a>
+          <p class="footer-tagline">El sabor del mar directo a tu mesa</p>
+        </div>
+
+        <div class="footer-links">
+          <strong>Navegación</strong>
+          <a href="#inicio">Inicio</a>
+          <a href="#menu">Menú</a>
+          <a href="#nosotros">Nosotros</a>
+          <a href="#galeria">Galería</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+
+        <div class="footer-social">
+          <strong>Síguenos</strong>
+          <div class="social-links">
+            <a href="#" class="social-btn" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="https://wa.me/521234567890" class="social-btn" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Madissquería. Todos los derechos reservados.</p>
+        <p>Hecho con ❤️ y sabor a mar</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== WHATSAPP FLOTANTE ===================== -->
+  <a href="https://wa.me/521234567890?text=Hola%2C%20quiero%20hacer%20un%20pedido%20en%20Madissquer%C3%ADa" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Pedir por WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span>Pedir ahora</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
